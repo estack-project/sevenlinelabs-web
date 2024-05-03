@@ -17,15 +17,26 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #222222;
+  background:#ffffff;
 
   font-family: 'Open Sans', "Nanum Myeongjo", Verdana, Dotum, AppleGothic, sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #1d1d1d;
+  transition: all 0.2s;
+
+  backdrop-filter: blur(83.3333px);
+}
+
+header.show {
+
+  transform: translateY(0%);
+}
+
+header:not(.show) {
+  transform: translateY(-100%);
 }
 
 @layer utilities {
