@@ -222,7 +222,7 @@ export default function Container() {
 
               <div className="email-container text-right">
                 <a
-                  href="mailTo:dillon@sevenlabs.com"
+                  href="mailTo:cs@sevenlinelabs.com"
                   className="send-mail-button h-full w-24 cursor-pointer bg-[#4e529a] px-4 py-2 font-bold text-white transition-colors hover:bg-[#282a4a]">
                   Send Mail
                 </a>
