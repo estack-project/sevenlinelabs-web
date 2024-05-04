@@ -1,11 +1,16 @@
 'use client'
 import ArrowDown from '@/public/svgs/arrow-down'
+import EthereumFoundation from '@/public/svgs/ethereumFoundation'
 import Social_Git from '@/public/svgs/social-git'
 import Social_X from '@/public/svgs/social-x'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import TmhcLogo from '../public/images/support_tmhc.png'
+import MaticLogo from '../public/images/matic.png'
+import BscLogo from '../public/images/bsc.png'
 
 export default function Container() {
   const onScrollMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -157,39 +162,16 @@ export default function Container() {
             <a
               href="https://blog.matter-labs.io/grant-from-the-ethereum-foundation-for-matter-labs-64338f3dd938"
               target="_blank">
-              <picture>
-                <img
-                  src="http://sevenlinelabs.com/theme/wb0102/img/tbimg/main/ethereumFoundation.svg"
-                  alt="ethereumFoundation"
-                  title=""></img>
-              </picture>
+              <EthereumFoundation />
             </a>
             <a href="https://www.tokyomongzhillsclub.com/" target="_blank">
-              <picture>
-                <img
-                  src="http://sevenlinelabs.com/theme/wb0102/img/tbimg/main/support_tmhc.png"
-                  alt="support_tmhc"
-                  title=""
-                />
-              </picture>
+              <Image src={TmhcLogo} alt="tmhc-logo" />
             </a>
             <a href="https://polygon.technology/" target="_blank">
-              <picture>
-                <img
-                  src="http://sevenlinelabs.com/theme/wb0102/img/tbimg/main/matic.png"
-                  alt="matic"
-                  title=""
-                />
-              </picture>
+              <Image src={MaticLogo} alt="matic-logo" />
             </a>
             <a href="https://www.bnbchain.org/" target="_blank">
-              <picture>
-                <img
-                  src="http://sevenlinelabs.com/theme/wb0102/img/tbimg/main/bsc.png"
-                  alt="bsc"
-                  title=""
-                />
-              </picture>
+              <Image src={BscLogo} alt="bsc-logo" />
             </a>
           </div>
         </div>
