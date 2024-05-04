@@ -18,25 +18,275 @@
 
 body {
   color: #222222;
-  background:#ffffff;
+  background: #ffffff;
 
-  font-family: 'Open Sans', "Nanum Myeongjo", Verdana, Dotum, AppleGothic, sans-serif;
+  font-family: 'Open Sans', 'Nanum Myeongjo', Verdana, Dotum, AppleGothic, sans-serif;
+
+  overflow-x: hidden;
+}
+
+body > .wrapper {
+  max-width: 160rem;
+  background-color: #11142b;
 }
 
 header {
-  border-bottom: 1px solid #1d1d1d;
+  /* border-bottom: 1px solid #1d1d1d; */
   transition: all 0.2s;
 
   backdrop-filter: blur(83.3333px);
+  box-shadow:
+    var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000),
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 header.show {
-
   transform: translateY(0%);
 }
 
 header:not(.show) {
-  transform: translateY(-100%);
+  transform: translateY(-200%);
+}
+
+header .resIcon .resIcon_wrap span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+header .resIcon .resIcon_wrap span:nth-of-type(1) {
+  top: 4px;
+  right: 0;
+}
+
+header .resIcon .resIcon_wrap span:nth-of-type(2) {
+  top: calc(50% - 1px);
+  width: 20px;
+  right: 0;
+}
+header .resIcon .resIcon_wrap span:nth-of-type(3) {
+  bottom: 4px;
+  right: 0;
+}
+
+header .resIcon.open .resIcon_wrap span:nth-of-type(1) {
+  transform-origin: 5.5px 0;
+  transform: rotate(45deg);
+}
+
+header .resIcon.open .resIcon_wrap span:nth-of-type(2) {
+  opacity: 0;
+}
+header .resIcon.open .resIcon_wrap span:nth-of-type(3) {
+  transform-origin: 0.5px 0;
+  transform: rotate(-45deg);
+}
+
+header .sidebar {
+  position: fixed;
+  top: -300%;
+  width: 100%;
+  height: 100%;
+  max-height: 128px;
+  min-height: 128px;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 0;
+  background: #11142b;
+  transition: 0.3s;
+  box-shadow: 1px 1px 5px 10px rgb(0 0 0 / 20%);
+}
+header .sidebar.show {
+  top: 0;
+}
+
+main .scroll-down {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  height: 53px;
+  margin: 0 auto;
+  width: 53px;
+  justify-content: center;
+  align-items: center;
+}
+
+main .scroll-down svg {
+  color: #fff;
+  display: block;
+  text-align: center;
+  transition: all 0.8s ease;
+}
+
+main .scroll-down::before,
+main .scroll-down::after {
+  background-blend-mode: overlay, normal, normal, color-dodge, normal;
+  content: '';
+  -webkit-filter: blur(30px) brightness(130%);
+  filter: blur(30px) brightness(130%);
+  height: 50px;
+  mix-blend-mode: normal;
+  position: absolute;
+  transition: all 0.8s ease;
+  width: 65px;
+  left: -6px;
+  will-change: filter;
+  border-radius: 50%;
+  top: 0;
+}
+
+main .scroll-down:hover::before,
+main .scroll-down:hover::after {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-filter: blur(10px) brightness(100%);
+  filter: blur(10px) brightness(100%);
+}
+main .scroll-down:hover svg {
+  transform: scale(1.25);
+}
+main .scroll-down::before {
+  background: radial-gradient(
+      19.49% 58.52% at 50% 0,
+      rgba(249, 196, 60, 0.3) 0,
+      rgba(231, 166, 1, 0) 100%
+    ),
+    radial-gradient(50% 50% at 100% 100%, #520aeb 10.27%, rgba(159, 115, 255, 0) 100%),
+    radial-gradient(77.86% 77.86% at 100% 0, #00a7ff 0, rgba(0, 166, 254, 0.12) 100%),
+    radial-gradient(50% 50% at 0 0, #ff8d6c 0, rgba(255, 92, 0, 0.6) 100%),
+    radial-gradient(70.24% 70.24% at 0 100%, #e81d72 0, rgba(255, 0, 0, 0) 100%);
+}
+
+.logo-group {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 8.125rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-group a {
+  flex: 1;
+  padding: 0;
+  height: 5rem;
+
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.logo-group a::before,
+.logo-group a::after {
+  content: '';
+  opacity: 0;
+  transition: opacity 0.27s ease;
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  z-index: -1;
+  width: 65%;
+  height: 100%;
+  border-radius: 50%;
+  background-blend-mode: overlay, normal, normal, color-dodge, normal;
+  mix-blend-mode: normal;
+  will-change: opacity;
+  background: radial-gradient(
+      19.49% 58.52% at 50% 0,
+      rgba(249, 196, 60, 0.3) 0,
+      rgba(231, 166, 1, 0) 100%
+    ),
+    radial-gradient(50% 50% at 100% 100%, #520aeb 10.27%, rgba(159, 115, 255, 0) 100%),
+    radial-gradient(77.86% 77.86% at 100% 0, #00a7ff 0, rgba(0, 166, 254, 0.12) 100%),
+    radial-gradient(50% 50% at 0 0, #ff8d6c 0, rgba(255, 92, 0, 0.6) 100%),
+    radial-gradient(70.24% 70.24% at 0 100%, #e81d72 0, rgba(255, 0, 0, 0) 100%);
+}
+
+.logo-group a:hover::before,
+.logo-group a:hover::after {
+  opacity: 0.75;
+}
+
+.logo-group a picture {
+  display: inline-flex;
+  justify-content: center;
+}
+.logo-group a img {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: all 0.27s ease;
+}
+
+.logo-group a:hover img {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.cont-box {
+  position: relative;
+  background: #121429;
+  border-radius: 0.25rem;
+  box-shadow: 0 7px 13px rgb(0 0 0 / 8%);
+  display: flex;
+  height: -webkit-max-content;
+  height: max-content;
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px 42px;
+}
+
+.cont-box::before {
+  -webkit-filter: blur(5px) brightness(100%);
+  filter: blur(5px) brightness(100%);
+}
+.cont-box::after {
+  -webkit-filter: blur(48px) brightness(100%);
+  filter: blur(48px) brightness(100%);
+}
+.cont-box::before,
+.cont-box::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+      19.49% 58.52% at 50% 0,
+      rgba(249, 196, 60, 0.3) 0,
+      rgba(231, 166, 1, 0) 100%
+    ),
+    radial-gradient(50% 50% at 100% 100%, #520aeb 10.27%, rgba(159, 115, 255, 0) 100%),
+    radial-gradient(77.86% 77.86% at 100% 0, #00a7ff 0, rgba(0, 166, 254, 0.12) 100%),
+    radial-gradient(50% 50% at 0 0, #ff8d6c 0, rgba(255, 92, 0, 0.6) 100%),
+    radial-gradient(70.24% 70.24% at 0 100%, #e81d72 0, rgba(255, 0, 0, 0) 100%);
+  background-blend-mode: overlay, normal, normal, color-dodge, normal;
+  border-radius: 6px;
+  mix-blend-mode: normal;
+  transition:
+    filter 0.2s ease,
+    -webkit-filter 0.2s ease;
+  will-change: filter;
+  z-index: -1;
+}
+
+.cont-box .left-cont,
+.cont-box .right-cont {
+  max-height: max-content;
+  width: 100%;
 }
 
 @layer utilities {
