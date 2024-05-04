@@ -145,7 +145,7 @@ export default function Container() {
         </div>
       </section>
 
-      <section className="sticky top-0 flex h-screen flex-col items-center justify-center bg-[#11142b] md:p-4">
+      <section className="sticky top-0 flex min-h-screen flex-col items-center justify-center bg-[#11142b] md:p-4">
         <div className="max-w-[820px] text-center text-white">
           <h1
             data-aos="fade-up"
@@ -155,7 +155,7 @@ export default function Container() {
             Backed by th wisionaries
           </h1>
           <div
-            className="logo-group"
+            className="logo-group flex flex-row flex-wrap items-center justify-center gap-8 sm:max-w-[180px] sm:flex-col"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1200">
@@ -202,7 +202,7 @@ export default function Container() {
                 </div>
               </div>
 
-              <div className="email-container text-right">
+              <div className="email-container pt-8 text-right">
                 <a
                   href="mailTo:cs@sevenlinelabs.com"
                   className="send-mail-button h-full w-24 cursor-pointer bg-[#4e529a] px-4 py-2 font-bold text-white transition-colors hover:bg-[#282a4a]">

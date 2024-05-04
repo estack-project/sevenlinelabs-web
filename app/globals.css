@@ -166,12 +166,6 @@ main .scroll-down::before {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 8.125rem;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
 }
 
 .logo-group a {
