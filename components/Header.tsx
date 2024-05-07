@@ -22,7 +22,7 @@ export default function Header() {
 
   const onScroll = throttle(() => {
     const currentScrollY = window.scrollY
-    const direction = currentScrollY > previousScrollY ? 'down' : 'up'
+    const direction = currentScrollY <= 0 ? 'up' : currentScrollY > previousScrollY ? 'down' : 'up'
 
     direction === 'down'
       ? document.querySelector('header')?.classList.remove('show')
