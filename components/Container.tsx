@@ -65,87 +65,89 @@ export default function Container() {
         </div>
       </section>
 
-      <section
-        id="second-section"
-        className="sticky top-0 flex h-screen items-center justify-center bg-[#4e529a] md:p-4">
-        <div className="max-w-[820px] text-center text-white">
-          <h1
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="600"
-            className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
-            What We&apos;re doing?
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="600"
-            className="break-keep pb-8 text-left text-2xl leading-9 text-[#989898] md:text-xl">
-            We are expanding on the usability of blockchain. This will be a great challenge to
-            enable mainstream adoption of public blockchain, and our mission is to accelerate this
-            ongoing blockchain revolution.
-          </p>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="600"
-            className="break-keep text-left text-2xl leading-9 text-[#989898] md:text-xl">
-            Sevenline Labs has been carrying out missions since 2022 and is trying to increase the
-            number of users for each project with each solution. It will make blockchain more
-            valuable today and contribute to the expansion of usage.
-          </p>
-        </div>
-      </section>
+      <div>
+        <section
+          id="second-section"
+          className="sticky top-0 flex h-screen items-center justify-center bg-[#4e529a] md:p-4">
+          <div className="max-w-[820px] text-center text-white">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="600"
+              className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
+              What We&apos;re doing?
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="600"
+              className="break-keep pb-8 text-left text-2xl leading-9 text-[#989898] md:text-xl">
+              We are expanding on the usability of blockchain. This will be a great challenge to
+              enable mainstream adoption of public blockchain, and our mission is to accelerate this
+              ongoing blockchain revolution.
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="600"
+              className="break-keep text-left text-2xl leading-9 text-[#989898] md:text-xl">
+              Sevenline Labs has been carrying out missions since 2022 and is trying to increase the
+              number of users for each project with each solution. It will make blockchain more
+              valuable today and contribute to the expansion of usage.
+            </p>
+          </div>
+        </section>
 
-      <section className="sticky top-0 flex h-screen items-center justify-center bg-neutral-800 md:p-4">
-        <div className="max-w-[820px] text-center text-white">
-          <h1
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="600"
-            className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
-            How we work?
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="600"
-            className="break-keep pb-8 text-left text-2xl leading-9 text-[#989898] md:text-xl">
-            Sevenline Labs is a place full of experienced and actionable people. Our team is a very
-            attractive team that can execute the customer&apos;s process immediately.
-          </p>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="600"
-            className="break-keep text-left text-2xl leading-9 text-[#989898] md:text-xl">
-            The important thing is not just to think, but to reach results.Our headquarters is in
-            Korea, but we can work in the world through the network.
-          </p>
-        </div>
-      </section>
+        <section className="sticky top-0 flex h-screen items-center justify-center bg-neutral-800 md:p-4">
+          <div className="max-w-[820px] text-center text-white">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="600"
+              className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
+              How we work?
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="600"
+              className="break-keep pb-8 text-left text-2xl leading-9 text-[#989898] md:text-xl">
+              Sevenline Labs is a place full of experienced and actionable people. Our team is a
+              very attractive team that can execute the customer&apos;s process immediately.
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="600"
+              className="break-keep text-left text-2xl leading-9 text-[#989898] md:text-xl">
+              The important thing is not just to think, but to reach results.Our headquarters is in
+              Korea, but we can work in the world through the network.
+            </p>
+          </div>
+        </section>
 
-      <section className="sticky top-0 flex h-screen items-center justify-center bg-neutral-950 md:p-4">
-        <div className="max-w-[820px] text-center text-white">
-          <h1
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="600"
-            className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
-            Interested to join?
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="600"
-            className="break-keep pb-8 text-left text-2xl leading-9 text-[#989898] md:text-xl">
-            We&apos;re always looking for exceptional talent.Check out our open positions, or just
-            reach out if our mission, challenges and culture resonate with you.
-          </p>
-        </div>
-      </section>
+        <section className="sticky top-0 flex h-screen items-center justify-center bg-neutral-950 md:p-4">
+          <div className="max-w-[820px] text-center text-white">
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="600"
+              className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
+              Interested to join?
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="600"
+              className="break-keep pb-8 text-left text-2xl leading-9 text-[#989898] md:text-xl">
+              We&apos;re always looking for exceptional talent.Check out our open positions, or just
+              reach out if our mission, challenges and culture resonate with you.
+            </p>
+          </div>
+        </section>
+      </div>
 
-      <section className="sticky top-0 flex min-h-screen flex-col items-center justify-center bg-[#11142b] md:p-4">
+      <section className="flex min-h-screen flex-col items-center justify-center bg-[#11142b] md:p-4">
         <div className="max-w-[820px] text-center text-white">
           <h1
             data-aos="fade-up"
