@@ -154,7 +154,7 @@ export default function Container() {
             data-aos-delay="100"
             data-aos-duration="600"
             className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
-            Backed by th wisionaries
+            Backed by the wisionaries
           </h1>
           <div
             className="logo-group flex flex-row flex-wrap items-center justify-center gap-8 sm:max-w-[180px] sm:flex-col"
