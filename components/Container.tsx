@@ -483,7 +483,7 @@ export default function Container() {
               <div className="follow-container flex flex-row flex-nowrap items-center justify-between text-white">
                 <div className="follow-title text-[#989898]">Follow us:</div>
                 <div className="follow-sns inline-flex gap-3">
-                  <Link href="https://github.com/" target="_blank">
+                  <Link href="https://github.com/estack-project" target="_blank">
                     <Social_Git width={'1.25rem'} height={'1.25rem'} />
                   </Link>
                 </div>
