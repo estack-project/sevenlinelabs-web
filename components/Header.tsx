@@ -1,7 +1,6 @@
 'use client'
 
 import Social_Git from '@/public/svgs/social-git'
-import Social_X from '@/public/svgs/social-x'
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../public/images/sevenlineLabs_Logo.png'
@@ -50,10 +49,7 @@ export default function Header() {
 
           <div className="head-icons z-50 inline-flex text-white">
             <div className="sns_icon inline-flex flex-row flex-nowrap gap-2 md:hidden">
-              <Link href="https://x.com/" target="_blank">
-                <Social_X />
-              </Link>
-              <Link href="https://github.com/" target="_blank">
+              <Link href="https://github.com/estack-project" target="_blank">
                 <Social_Git />
               </Link>
             </div>
@@ -71,10 +67,7 @@ export default function Header() {
 
           <div className="sidebar fixed top-0 z-40 px-8 pt-20">
             <div className="side-sns flex gap-3 text-white ">
-              <Link href="https://x.com/" target="_blank">
-                <Social_X width={'1.25rem'} height={'1.25rem'} />
-              </Link>
-              <Link href="https://github.com/" target="_blank">
+              <Link href="https://github.com/estack-project" target="_blank">
                 <Social_Git width={'1.25rem'} height={'1.25rem'} />
               </Link>
             </div>

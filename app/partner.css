@@ -106,6 +106,12 @@
     width: var(--max-width);
 }
 
+@media (max-width: 992px) {
+    .marquee-container .marquee,
+    .marquee-container .marquee .initial-child-container {
+        gap: calc(var(--rolling-gap) - 2.5rem);
+    }
+}
 @media (max-width: 768px) {
     .marquee-container .overlay::before,
     .marquee-container .overlay::after {

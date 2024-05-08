@@ -2,15 +2,14 @@
 import ArrowDown from '@/public/svgs/arrow-down'
 import EthereumFoundation from '@/public/svgs/ethereumFoundation'
 import Social_Git from '@/public/svgs/social-git'
-import Social_X from '@/public/svgs/social-x'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect } from 'react'
-import TmhcLogo from '../public/images/support_tmhc.png'
 import MaticLogo from '../public/images/matic.png'
 import BscLogo from '../public/images/bsc.png'
+import XplaLogo from '../public/images/xpla.png'
 import Partner_1 from '../public/images/partners/0x&_logo.png'
 import Partner_2 from '../public/images/partners/BRICK_STREAM.png'
 import Partner_3 from '../public/images/partners/CARRIE_VERSE.png'
@@ -32,8 +31,10 @@ import Partner_18 from '../public/images/partners/SoulSurfers_Logo.png'
 import Partner_19 from '../public/images/partners/STOIC_ENTERTAINMENT.png'
 import Partner_20 from '../public/images/partners/VERSUS_NOW.png'
 import Partner_21 from '../public/images/partners/WENEE.png'
+import GalaChain from '@/public/svgs/galaChain'
 
 import '../app/partner.css'
+import BaseChain from '@/public/svgs/baseChain'
 
 export default function Container() {
   const onScrollMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -447,14 +448,20 @@ export default function Container() {
               target="_blank">
               <EthereumFoundation />
             </a>
-            <a href="https://www.tokyomongzhillsclub.com/" target="_blank">
-              <Image src={TmhcLogo} alt="tmhc-logo" />
-            </a>
             <a href="https://polygon.technology/" target="_blank">
               <Image src={MaticLogo} alt="matic-logo" />
             </a>
+            <a href="https://base.org" target="_blank">
+              <BaseChain />
+            </a>
+            <a href="https://gala.com/" target="_blank">
+              <GalaChain />
+            </a>
             <a href="https://www.bnbchain.org/" target="_blank">
               <Image src={BscLogo} alt="bsc-logo" />
+            </a>
+            <a href="https://xpla.io/" target="_blank">
+              <Image src={XplaLogo} alt="xpla-logo" />
             </a>
           </div>
         </div>
@@ -476,9 +483,6 @@ export default function Container() {
               <div className="follow-container flex flex-row flex-nowrap items-center justify-between text-white">
                 <div className="follow-title text-[#989898]">Follow us:</div>
                 <div className="follow-sns inline-flex gap-3">
-                  <Link href="https://x.com/" target="_blank">
-                    <Social_X width={'1.25rem'} height={'1.25rem'} />
-                  </Link>
                   <Link href="https://github.com/" target="_blank">
                     <Social_Git width={'1.25rem'} height={'1.25rem'} />
                   </Link>
