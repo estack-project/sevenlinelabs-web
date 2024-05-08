@@ -11,6 +11,29 @@ import { useEffect } from 'react'
 import TmhcLogo from '../public/images/support_tmhc.png'
 import MaticLogo from '../public/images/matic.png'
 import BscLogo from '../public/images/bsc.png'
+import Partner_1 from '../public/images/partners/0x&_logo.png'
+import Partner_2 from '../public/images/partners/BRICK_STREAM.png'
+import Partner_3 from '../public/images/partners/CARRIE_VERSE.png'
+import Partner_4 from '../public/images/partners/DRAWSHOPKINGDOM.png'
+import Partner_5 from '../public/images/partners/HASHLINK.png'
+import Partner_6 from '../public/images/partners/LARGOSOFT.png'
+import Partner_7 from '../public/images/partners/logo_burrito.png'
+import Partner_8 from '../public/images/partners/logo_crownedturtle.png'
+import Partner_9 from '../public/images/partners/logo_plustonic.png'
+import Partner_10 from '../public/images/partners/logo_springcomes.png'
+import Partner_11 from '../public/images/partners/MALANG.png'
+import Partner_12 from '../public/images/partners/MIMBO_FOR_SPEED_logo.png'
+import Partner_13 from '../public/images/partners/PERPLAY.png'
+import Partner_14 from '../public/images/partners/PERUGIA_logo.png'
+import Partner_15 from '../public/images/partners/PIXEL_BATTLE.png'
+import Partner_16 from '../public/images/partners/pneopin.png'
+import Partner_17 from '../public/images/partners/pomerium-logo.png'
+import Partner_18 from '../public/images/partners/SoulSurfers_Logo.png'
+import Partner_19 from '../public/images/partners/STOIC_ENTERTAINMENT.png'
+import Partner_20 from '../public/images/partners/VERSUS_NOW.png'
+import Partner_21 from '../public/images/partners/WENEE.png'
+
+import '../app/partner.css'
 
 export default function Container() {
   const onScrollMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -147,7 +170,7 @@ export default function Container() {
         </section>
       </div>
 
-      <section className="flex min-h-screen flex-col items-center justify-center bg-[#11142b] md:p-4">
+      <section className="flex min-h-screen flex-col items-center justify-center bg-[#11142b] md:p-4 md:py-8">
         <div className="max-w-[820px] text-center text-white">
           <h1
             data-aos="fade-up"
@@ -156,8 +179,266 @@ export default function Container() {
             className="mb-5 pb-12 text-4xl font-bold md:text-3xl">
             Backed by the wisionaries
           </h1>
+          <div className="marquee-container mt-5">
+            <div className="overlay"></div>
+            <div className="marquee normal">
+              <div className="initial-child-container">
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_1} alt="partner-1" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_2} alt="partner-2" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_3} alt="partner-3" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_4} alt="partner-4" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_5} alt="partner-5" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_6} alt="partner-6" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_7} alt="partner-7" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_8} alt="partner-8" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_9} alt="partner-9" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_10} alt="partner-10" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_11} alt="partner-11" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_12} alt="partner-12" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="marquee normal">
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_1} alt="partner-1" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_2} alt="partner-2" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_3} alt="partner-3" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_4} alt="partner-4" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_5} alt="partner-5" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_6} alt="partner-6" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_7} alt="partner-7" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_8} alt="partner-8" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_9} alt="partner-9" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_10} alt="partner-10" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_11} alt="partner-11" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_12} alt="partner-12" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="marquee-container">
+            <div className="overlay"></div>
+            <div className="marquee reverse">
+              <div className="initial-child-container">
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_10} alt="partner-10" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_11} alt="partner-11" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_12} alt="partner-12" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_13} alt="partner-13" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_14} alt="partner-14" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_15} alt="partner-15" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_16} alt="partner-16" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_17} alt="partner-17" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_18} alt="partner-18" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_19} alt="partner-19" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_20} alt="partner-20" />
+                  </div>
+                </div>
+                <div className="child">
+                  <div className="marquee-content">
+                    <Image src={Partner_21} alt="partner-21" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="marquee reverse">
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_10} alt="partner-10" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_11} alt="partner-11" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_12} alt="partner-12" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_13} alt="partner-13" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_14} alt="partner-14" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_15} alt="partner-15" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_16} alt="partner-16" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_17} alt="partner-17" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_18} alt="partner-18" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_19} alt="partner-19" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_20} alt="partner-20" />
+                </div>
+              </div>
+              <div className="child">
+                <div className="marquee-content">
+                  <Image src={Partner_21} alt="partner-21" />
+                </div>
+              </div>
+            </div>
+          </div>
           <div
-            className="logo-group flex flex-row flex-wrap items-center justify-center gap-8 sm:max-w-[180px] sm:flex-col"
+            className="logo-group flex flex-row flex-wrap items-center justify-center gap-8 sm:mt-80 sm:max-w-[180px] sm:flex-col"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1200">
